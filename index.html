@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="buttons.css">
+    <link rel="stylesheet" href="snowflakes.css">
+    <link rel="stylesheet" href="dropdown.css">
+    <link rel="/asd" href="src/test.html">
+    <title>SleepR</title>
+</head>
+<body>
+
+
+    <div id="title">
+        <h1 class="title">🛏 SleepR 🛏</h1>
+        <h4 class="description">Sleep In Time & Get Up Well</h4>
+        <h5 class="description" id="current_time"></h4>
+    </div>
+
+
+    <div id="main_content">
+        <div>
+            <h4 class="description">Sleep Now And Wake Up In Time</h4>
+            <button onclick="sleep_now()" class="button1">🌙 Sleep Now</button>
+        </div>
+        <br>
+        <div>
+            <h4 class="description">Set A Time When You Want To Get Up</h4>
+            <button id="wake_up" onclick="set_time(this.id)" class="button1">⏳ Set Timer</button>
+        </div>
+        <br>
+        <div>
+            <h4 class="description">Set A Time When You Want To Fall Asleep</h4>
+            <button id="fall_asleep" onclick="set_time(this.id)" class="button1">⏳ Set Timer</button>
+        </div>
+
+        <div id="snowflakes" hidden="true" class="snowflakes" aria-hidden="true">
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+            <div class="snowflake">
+            ❅
+            </div>
+            <div class="snowflake">
+            ❆
+            </div>
+        </div>
+    </div>
+
+    <div id="set_time" class="select_dropdown" hidden="true">
+        <br>
+        <div class="next_each_other">
+            <div>
+                <h4 class="description">Hour</h4>
+                <select name="hours" id="hour_selector">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                </select>
+            </div>
+            
+            <div>
+                <h4 class="description">Minute</h4>
+                <select name="minutes" id="minute_selector">
+                    <option value="0">00</option>
+                    <option value="05">05</option>
+                    <option value="10">10</option>
+                    <option value="15">15</option>
+                    <option value="20">20</option>
+                    <option value="25">25</option>
+                    <option value="30">30</option>
+                    <option value="35">35</option>
+                    <option value="40">40</option>
+                    <option value="45">45</option>
+                    <option value="50">50</option>
+                    <option value="55">55</option>
+                </select>
+            </div>
+        </div>
+        <br><br><br><br><br><br><br>
+        <button onclick="method_selector()" class="button1">🧮 Calculate</button>
+    </div>
+
+    <div id="sleep_now" hidden="true">
+        <h4 class="description">🥳 If You Want To Get Up Well, Set Your Alarm To One Of The Times Below</h4>
+        <h5 id="sleep_now_times" class="description"></h5>
+    </div>
+
+
+
+
+</body>
+</html>
